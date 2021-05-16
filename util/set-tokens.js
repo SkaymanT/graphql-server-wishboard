@@ -33,7 +33,7 @@ module.exports.tokenCookies = ({ accessToken, refreshToken }) => {
   const cookieOptions = {
     httpOnly: true,
     // secure: true,
-    // sameSite: 'none',
+    sameSite: 'none',
   };
   return {
     access: ['access', accessToken, cookieOptions],
